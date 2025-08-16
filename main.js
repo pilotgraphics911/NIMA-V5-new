@@ -144,7 +144,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             message.message?.imageMessage?.caption?.trim() ||
             message.message?.videoMessage?.caption?.trim() ||
             ''
-        ).toLowerCase().replace(/\.\\s+/g, '.').trim();
+        ).toLowerCase().replace(/\.\\s+/g, '').trim();
 
         // Preserve raw message for commands like .tag that need original casing
         const rawText = message.message?.conversation?.trim() ||
@@ -154,7 +154,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             '';
 
         // Only log command usage
-        if (userMessage.startsWith('.')) {
+        if (userMessage.startsWith('')) {
             console.log(`📝 විධානය තුල ${isGroup ? 'group' : 'private'}: ${userMessage}`);
         }
 
@@ -193,7 +193,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         }
 
         // Then check for command prefix
-        if (!userMessage.startsWith('.')) {
+        if (!userMessage.startsWith('')) {
             if (isGroup) {
                 // Process non-command messages first
                 await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
@@ -806,7 +806,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 break;
         }
 
-        if (userMessage.startsWith('.')) {
+        if (userMessage.startsWith('')) {
             // After command is processed successfully
             await addCommandReaction(sock, message);
         }
