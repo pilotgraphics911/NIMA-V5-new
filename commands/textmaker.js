@@ -20,7 +20,7 @@ const messageTemplates = {
     }),
     success: (text, imageUrl) => ({
         image: { url: imageUrl },
-        caption: "CREATED BY NIMA",
+        caption: "NIMA V5",
         contextInfo: channelInfo
     })
 };
@@ -28,14 +28,14 @@ const messageTemplates = {
 async function textmakerCommand(sock, chatId, message, q, type) {
     try {
         if (!q) {
-            return await sock.sendMessage(chatId, messageTemplates.error("විධානයට පසු ලියන්න\nඋදාහරණ: .metallic nimesha"));
+            return await sock.sendMessage(chatId, messageTemplates.error("කරුණාකර විධානයට පසු ලියන්න\nඋදාහරණ: .metallic NIMA"));
         }
 
         // Extract text
         const text = q.split(' ').slice(1).join(' ');
 
         if (!text) {
-            return await sock.sendMessage(chatId, messageTemplates.error("විධානයට පසු ලියන්න\nඋදාහරණ: .metallic nimesha"));
+            return await sock.sendMessage(chatId, messageTemplates.error("කරුණාකර විධානයට පසු ලියන්න\nඋදාහරණ: .metallic NIMA"));
         }
 
         try {
@@ -110,7 +110,7 @@ async function textmakerCommand(sock, chatId, message, q, type) {
         }
     } catch (error) {
         console.error('Error in textmaker command:', error);
-        await sock.sendMessage(chatId, messageTemplates.error("අසාර්ථකයි. පසුව උත්සහ කරන්න."));
+        await sock.sendMessage(chatId, messageTemplates.error("දෝෂයකි. පසුව උත්සහ කරන්න."));
     }
 }
 
