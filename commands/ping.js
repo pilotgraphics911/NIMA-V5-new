@@ -21,21 +21,21 @@ function formatTime(seconds) {
 async function pingCommand(sock, chatId, message) {
     try {
         const start = Date.now();
-        await sock.sendMessage(chatId, { text: ' *𝙹𝚄𝙽𝙴 𝙼𝙳 𝙱𝙾𝚃* ' }, { quoted: message });
+        await sock.sendMessage(chatId, { text: ' *.menu* ' }, { quoted: message });
         const end = Date.now();
         const ping = Math.round((end - start) / 2);
 
         const uptimeInSeconds = process.uptime();
         const uptimeFormatted = formatTime(uptimeInSeconds);
 
-        const botInfo = `🔸 *NIMESHA* 𝚜𝚙𝚎𝚎𝚍: ${ping} ms`.trim();
+        const botInfo = `🔸 NIMA V5 SPEED: ${ping} ms`.trim();
 
         // Reply to the original message with the bot info
         await sock.sendMessage(chatId, { text: botInfo},{ quoted: message });
 
     } catch (error) {
         console.error('Error in ping command:', error);
-        await sock.sendMessage(chatId, { text: '❌ නැවත උත්සහ කරන්න.' });
+        await sock.sendMessage(chatId, { text: 'තත්ව දර්ෂනය ලබා දීම අසාර්ථකයි❌.' });
     }
 }
 
