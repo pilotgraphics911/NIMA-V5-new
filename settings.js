@@ -7,7 +7,7 @@ const settings = {
   giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
   commandMode: "public",
   description: "2025 නවතම සිංහල whatsapp රොබෝ.",
-  version: "1.2.1",
+  version: "V5",
 };
 
 module.exports = settings;
