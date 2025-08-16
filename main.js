@@ -179,7 +179,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         /*  // Basic message response in private chat
           if (!isGroup && (userMessage === 'hi' || userMessage === 'hello' || userMessage === 'bot' || userMessage === 'hlo' || userMessage === 'hey' || userMessage === 'bro')) {
               await sock.sendMessage(chatId, {
-                  text: 'Hi, How can I help you?\nYou can use .menu for more info and commands.',
+                  text: 'Hi, How can I help you?\nYou can use .මෙනූ for more info and commands.',
                   ...channelInfo
               });
               return;
@@ -299,7 +299,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.unban'):
                 await unbanCommand(sock, chatId, message);
                 break;
-            case userMessage === '.help' || userMessage === '.menu' || userMessage === '.bot' || userMessage === '.list':
+            case userMessage === '.උදව්' || userMessage === '.මෙනූ' || userMessage === '.menu' || userMessage === '.list':
                 await helpCommand(sock, chatId, message, global.channelLink);
                 break;
             case userMessage === '.sticker' || userMessage === '.s':
