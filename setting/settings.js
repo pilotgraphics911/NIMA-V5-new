@@ -16,7 +16,7 @@ global.linktt = "https://tiktok.com"
 global.linktele = "https://t.me"
 
 //~~~~~~~~~~~ Settings Bot ~~~~~~~~~~~//
-global.prefix = ["","!",".",",","#","/","🎭","〽️"]
+global.prefix = [""]
 global.autoRecording = false
 global.autoTyping = true
 global.autorecordtype = false
