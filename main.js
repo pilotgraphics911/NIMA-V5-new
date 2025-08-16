@@ -745,7 +745,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.gpt') || userMessage.startsWith('.gemini'):
                 await aiCommand(sock, chatId, message);
                 break;
-            case userMessage.startsWith('.translate') || userMessage.startsWith('.trt'):
+            case userMessage.startsWith('.translate') || userMessage.startsWith('.tr'):
                 const commandLength = userMessage.startsWith('.translate') ? 10 : 4;
                 await handleTranslateCommand(sock, chatId, message, userMessage.slice(commandLength));
                 return;
