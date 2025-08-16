@@ -3,7 +3,7 @@
 <div align="center"> 
   <a href="https://git.io/typing-svg"> 
     <img src="https://readme-typing-svg.demolab.com?fo
-      nt=Rockwell&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=NIMA-V5;Multi+Device+Whatsapp+Bot;Made+By+Nimesha" alt="Typing SVG" />
+      nt=Rockwell&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=NIMA-V5 ;Multi+Device+Whatsapp+Bot;Made+By+Nimesha" alt="Typing SVG" />
   </a> 
 </div> 
 
