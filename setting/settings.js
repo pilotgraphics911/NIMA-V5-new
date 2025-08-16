@@ -18,9 +18,9 @@ global.linktele = "https://t.me"
 //~~~~~~~~~~~ Settings Bot ~~~~~~~~~~~//
 global.prefix = [""]
 global.autoRecording = false
-global.autoTyping = true
+global.autoTyping = false
 global.autorecordtype = false
-global.autoread = true
+global.autoread = false
 global.autobio = false
 global.anti92 = false
 global.owneroff = false
