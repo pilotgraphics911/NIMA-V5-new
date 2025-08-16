@@ -21,7 +21,7 @@ function formatTime(seconds) {
 async function pingCommand(sock, chatId, message) {
     try {
         const start = Date.now();
-        await sock.sendMessage(chatId, { text: '.menu' }, { quoted: message });
+        await sock.sendMessage(chatId, { text: 'NIMA V5 බොට්ව හදාගන්න ඕන නම් මේ වීඩියෝ එක බලන්න 😊❤️✅ = https://youtu.be/zU5WXsRWAhk?si=SiV7Q3UjBjgKibVR' }, { quoted: message });
         const end = Date.now();
         const ping = Math.round((end - start) / 2);
 
